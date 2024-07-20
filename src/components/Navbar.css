@@ -1,0 +1,49 @@
+.navbar-container{
+    z-index: 1;
+    position: relative;
+}
+
+.navbar-container.sticky{
+    position: sticky;
+}
+
+.sub-container{
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row,
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row{
+    min-height: 100px;
+}
+
+nav ul{
+    gap: 32px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+
+.dropbar{
+    opacity: 0;
+    transition: .3s ease;
+    position: absolute !important;
+}
+
+.dropbar-show{
+    opacity: 1;
+    position: absolute !important;
+    transition: .3s ease;
+}

@@ -1,0 +1,31 @@
+.hero-container *{
+    text-align: center;
+}
+
+.hero-container{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-container .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-container .heading .heading-h1{
+    line-height: 100px;
+}
+
+.hero-container .heading .heading-h3{
+    font-weight: 400;
+}

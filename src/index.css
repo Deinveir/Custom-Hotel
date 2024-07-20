@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hgreen{
+  color: #005C4A;
+}
+
+.heading-h1{
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-size: 100px;
+}
+
+.heading-h2{
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.heading-h3{
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.heading-h4{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.text-large{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+body{
+  background: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+.text-link {
+  text-decoration: none;
+  color: #000;
+  transition: all .3s ease-in-out;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.text-link-inverse{
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.text-link::before{
+  content: "";
+  background: #005C4A;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  width: 0;
+  transition: all .3s ease-in-out;
+}
+
+.text-link:hover::before{
+  width: 100%;
+}
+
+.text-link-inverse::before{
+  content: "";
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  width: 0;
+  transition: all .3s ease-in-out;
+}
+
+.text-link-inverse:hover::before{
+  width: 100%;
+}
+
+.container{
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tranparent{
+  background: transparent;
+}
+
+.light *{
+  color: #fff;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.btn{
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn-default{
+  border: 2px solid #005C4A;
+  color: #005C4A;
+  background: transparent;
+}
+
+.btn-default:hover{
+  border: 2px solid #005C4A;
+  color: #005C4A;
+  background: #005c4a7c;
+}
+
+.btn-default-inverse{
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.btn-default-inverse:hover{
+  border: 2px solid #005C4A;
+  color: #005C4A;
+  background: transparent;
+}
+
+.btn-primary{
+  background: #005C4A;
+  border: none;
+  color: #FFF5E8;
+}
+
+.btn-primary:hover{
+  background: #005c4a7c;
+  color: #005C4A;
+}
+
+.btn-primary-inverse{
+  background: #fff;
+  border: none;
+  color: #005C4A;
+}
+
+.btn-primary-inverse:hover{
+  background: #005C4A;
+  color: #fff;
+}
+
+.medium{
+  width: 300px;
+}
+
+.large{
+  width: 400px;
+}
+
+.x-large{
+  width: 600px;
+}
+
+.badge-primary{
+  background: #005C4A;
+  padding: 10px;
+  border-radius: 8px;
+  transition: .3s ease;
+}
+
+.badge-primary:hover{
+  background: #005c4a7c;
+}
+
+/* Margin */
+.margin-top-s{
+  margin-top: 10px;
+}
+
+.margin-top-m{
+  margin-top: 20px;
+}
+
+.margin-top-l{
+  margin-top: 40px;
+}
+
+.margin-bottom-s{
+  margin-bottom: 10px;
+}
+
+.margin-bottom-m{
+  margin-bottom: 20px;
+}
+
+.margin-bottom-l{
+  margin-bottom: 40px;
+}
+
+/* Padding */
+.padding-m{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

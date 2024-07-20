@@ -1,0 +1,98 @@
+.three-grid-container{
+    padding: 100px 0;
+}
+
+.three-grid-container .row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.three-grid-container .carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 200%;
+    transition: 0.6s ease-in;
+}
+
+.three-grid-container .carousel-item{
+    width: calc(100%/3);
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.three-grid-container .carousel-item .item-overlay:hover{
+    background: transparent;
+}
+
+.three-grid-container .carousel-item .item-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: background .3s ease-in-out;
+}
+
+.three-grid-container .carousel-item.active .item-overlay{
+    background: linear-gradient(0deg, rgba(0,0,0,0.5971638655462185) 0%, rgba(0,0,0,0) 100%);
+}
+
+.three-grid-container .carousel-container img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.three-grid-container .carousel-item .content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5971638655462185) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-grid-container .carousel-item .content div{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.three-grid-container .navigation{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    right: 10px;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 5px;
+    z-index: 1;
+}
+
+.three-grid-container .navigation .nav{
+    height: fit-content;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.three-grid-container .navigation .nav .disable{
+    background: #333;
+}
+
+.three-grid-container .navigation .nav svg{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
