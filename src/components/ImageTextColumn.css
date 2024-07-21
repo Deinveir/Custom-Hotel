@@ -7,15 +7,23 @@
     margin-bottom: 30px;
 }
 
-.two-column-container h2 span{
-    font-size: 16px;
+.two-column-container span{
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .two-column-container .text{
     margin-bottom: 20px;
+}
+
+.two-column-container .btn{
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
 }
 
 .two-column-container .row{
@@ -24,13 +32,10 @@
     gap: 80px;
 }
 
-.two-column-container .column{
-    width: 50%;
-}
-
 .two-column-container .column-right{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     overflow: hidden;
 }
 

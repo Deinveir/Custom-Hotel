@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import "./Home.css"
+import App from '../App'
+
+import About_img from "../assets/images/RH_Home_About.jpg"
 import Hero_Image from "../assets/images/Republic-Website-Banner-scaled.jpg"
 import Hero from '../components/Hero'
 import ImageTextColumn from '../components/ImageTextColumn'
@@ -14,7 +17,6 @@ import ImageCta from '../components/ImageCta'
 import Events_Happy_Hour from "../assets/images/RH_Events_Happy-Hour.jpg"
 import Events_State_of_Origin from "../assets/images/RH_Events_State-of-Origin.jpg"
 import Events_Pizza from "../assets/images/RH_Events_Pizza.jpg"
-import App from '../App'
 
 const Home = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -39,7 +41,20 @@ const Home = () => {
           btnLabel="Explore"
           btnLink=""
         />
-        <ImageTextColumn/>
+        <ImageTextColumn
+          title="About Us"
+          meta="Sydney"
+          description={[
+            "Since 1865, The Republic Hotel has hugged the corner of Pitt and Bridge Streets, at the heart of the Sydney CBD.",
+            "As the city’s commercial centre has expanded around it, the Republic has grown up too, from a single-storey pub to a four-level landmark. On each floor you’ll find a distinctly different establishment, all under the banner of one Republic.",
+            "At street level, we’re an escape from the bustling streets. Step inside for after-work catch ups, sports, burgers, and cold beers. Upstairs, be transported to a world of indulgent opulence with Inna, an intimate late night cocktail lounge. Enjoy light bites paired with expertly-crafted cocktails before ascending to our rooftop. Perched high among the city lights, where day blends into night with DJs, drinks, and dancing.",
+            "We are all play, no work. We are, The Republic."
+          ]}
+          image={About_img}
+          flexdirection="row"
+          columnImageWidth="50%"
+          columnContentWidth="50%"
+        />
         <ThreeGridSectionOverlay
           itemNum={6}
           heading="Our Spaces"

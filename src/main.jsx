@@ -6,8 +6,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+
 import Venues from './pages/Venues.jsx';
 import Home from './pages/Home.jsx';
+import Sportsbar from './pages/Sportsbar.jsx'
+import Inna_Lounge from './pages/Inna_Lounge.jsx'
+import Taylors_Rooftop from './pages/Taylors_Rooftop.jsx'
+import Functions from './pages/Functions.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,8 +26,23 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
+    path: "/venues/sportsbar",
+    element: <Sportsbar/>,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/venues/inna-lounge",
+    element: <Inna_Lounge/>,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/venues/taylors-rooftop",
+    element: <Taylors_Rooftop/>,
+    errorElement: <ErrorPage />
+  },
+  {
     path: "/functions",
-    element: <div className='heading-h1'>Functions</div>,
+    element: <Functions/>,
     errorElement: <ErrorPage />
   },
   {

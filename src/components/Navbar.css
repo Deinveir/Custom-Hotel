@@ -7,43 +7,73 @@
     position: sticky;
 }
 
-.sub-container{
+.navbar-container .sub-container{
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.row,
-ul{
+.navbar-container .row,
+.navbar-container ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.row{
+.navbar-container .row{
     min-height: 100px;
 }
 
-nav ul{
+.navbar-container nav ul{
     gap: 32px;
     list-style: none;
 }
 
-nav ul li a{
+.navbar-container nav ul li a{
     font-size: 16px;
     text-decoration: none;
-    color: #000;
     list-style: none;
 }
 
-.dropbar{
+.navbar-container .navbar-right{
+    position: relative;
+}
+
+.navbar-container .dropbar{
     opacity: 0;
-    transition: .3s ease;
     position: absolute !important;
 }
 
-.dropbar-show{
+.navbar-container .dropbar-show{
     opacity: 1;
     position: absolute !important;
     transition: .3s ease;
+    background: #fff;
+    left: 80px;
+    z-index: 1;
+}
+
+.navbar-container .dropbar-show ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0px;
+    padding: 0;
+}
+
+.navbar-container .dropbar-show ul li{
+    width: 100%;
+}
+
+.navbar-container .dropbar-show ul a{
+    color: #000;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-container .dropbar-show ul a:hover{
+    background: #005c4a7c;
 }

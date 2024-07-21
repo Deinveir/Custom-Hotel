@@ -14,7 +14,7 @@ const Hero = ( {backgroundImage, title, meta, description, btnLabel, btnLink} ) 
               <span className='heading-h3'>{meta}</span>
           </div>
           <p className='x-large text'>{description}</p>
-          <a href={btnLink} className='btn btn-default-inverse'>{btnLabel}</a>
+          {btnLabel ? <a href={btnLink} className='btn btn-primary-inverse'>{btnLabel}</a> : ""}
       </div>
     </div>
   )

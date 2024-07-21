@@ -5,7 +5,9 @@ import "./Navbar.css"
 const Navbar = () => {
   const [dropbar, setDropBar] = useState(false);
   return (
-    <div className='tranparent navbar-container light'>
+    <div className='tranparent navbar-container light' onMouseLeave={()=>{
+      setDropBar(false);
+    }}>
       <div className='sub-container'>
         <div className='row'>
         <div className='navbar-left'>
@@ -15,18 +17,14 @@ const Navbar = () => {
             <nav>
               <ul>
                   <li>
-                    <a className='text-link-inverse' href="/" onMouseEnter={()=>{
-                      setDropBar(true);
-                    }}
-                    onMouseLeave={()=>{
-                      setDropBar(false);
-                    }}
-                    >
+                    <a className='text-link-inverse' href="/">
                     Home
                     </a>
                   </li>
                   <li>
-                    <a className='text-link-inverse' href="/venues">
+                    <a className='text-link-inverse' href="/venues" onMouseEnter={()=>{
+                      setDropBar(true);
+                    }}>
                     Venues
                     </a>
                   </li>
@@ -51,13 +49,13 @@ const Navbar = () => {
                       </button>
                   </div>
               </ul>
-              <div className={dropbar ? "dropbar-show" : "dropbar"}>
+              <div className={dropbar ? "dropbar-show" : "dropbar"} onMouseLeave={()=>{
+                      setDropBar(false);
+                    }}>
                 <ul>
-                  <li>Dropbar Test</li>
-                  <li>Dropbar Test</li>
-                  <li>Dropbar Test</li>
-                  <li>Dropbar Test</li>
-                  <li>Dropbar Test</li>
+                  <li><a href="/venues/sportsbar">Sportsbar</a></li>
+                  <li><a href="/venues/inna-lounge">Inna Lounge</a></li>
+                  <li><a href="/venues/taylors-rooftop">Taylors Rooftop</a></li>
                 </ul>
               </div>
             </nav>
