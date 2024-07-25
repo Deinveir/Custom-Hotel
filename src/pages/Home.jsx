@@ -111,12 +111,6 @@ const Home = () => {
             svgColor: "#005C4A"
           }}
         />
-        <ImageCta
-        heading="Book Now"
-        description="Get comfortable in Sydney's finest setting and experience the atmosphere of our different spaces. Save your seat now."
-        buttonLabel="Book Now"
-        buttonLink="/booking"
-        />
       </App>
     </div>
   )

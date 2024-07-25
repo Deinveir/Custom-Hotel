@@ -1,0 +1,52 @@
+.whats-on-grid-list-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.whats-on-grid-list-container .container{
+    overflow: visible;
+}
+
+.whats-on-grid-list-container select{
+    border: solid 1px #005C4A;
+    padding: 10px 40px;
+    font-size: 16px;
+    outline: none;
+}
+
+.whats-on-grid-list-container option{
+    border-radius: 0;
+}
+
+.whats-on-grid-list-container .grid-container ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    overflow: visible;
+}
+
+.whats-on-grid-list-container img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.whats-on-grid-list-container .grid-item,
+.whats-on-grid-list-container  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.whats-on-grid-list-container .grid-item{
+    background: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: block;
+}
+
+.whats-on-grid-list-container  .content{
+    padding: 15px 20px 40px 20px;
+}

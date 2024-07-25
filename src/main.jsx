@@ -13,6 +13,7 @@ import Sportsbar from './pages/Sportsbar.jsx'
 import Inna_Lounge from './pages/Inna_Lounge.jsx'
 import Taylors_Rooftop from './pages/Taylors_Rooftop.jsx'
 import Functions from './pages/Functions.jsx';
+import Whats_On from './pages/Whats_On.jsx';
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/whats-on",
-    element: <div className='heading-h1'>What&apos;s On</div>,
+    element: <Whats_On/>,
     errorElement: <ErrorPage />
   },
   {
