@@ -14,6 +14,7 @@ import Inna_Lounge from './pages/Inna_Lounge.jsx'
 import Taylors_Rooftop from './pages/Taylors_Rooftop.jsx'
 import Functions from './pages/Functions.jsx';
 import Whats_On from './pages/Whats_On.jsx';
+import Contact from './pages/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <div className='heading-h1'>Contact</div>,
+    element: <Contact/>,
     errorElement: <ErrorPage />
   }
 ]);

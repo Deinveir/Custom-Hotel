@@ -4,17 +4,17 @@ import "./WhatsOnGridList.css"
 import {events} from "../assets/data/whats-on.js"
 
 const WhatsOnGridList = () => {
-    const eventsList = events.map((item) => 
+    const eventsList = events.map((item, index) => 
         <li className='grid-item' key={item.id}>
             <div>
                 <picture>
-                    <img src={item.imgId.Event_1} alt={item.title}/>
+                    <img src={item.imgId} alt={item.title}/>
                 </picture>
             </div>
             <div className='content'>
                 <div>{item.venue}</div>
                 <h3 className='heading-h3'>{item.title}</h3>
-                <p className='text'>{item.description}</p>
+                <p className='text'>{`${item.description.substring(0, 150)}...`}</p>
                 <a className='btn btn-primary margin-top-s' href={item.link}>{item.btnLabel}</a>
             </div>
         </li>
@@ -30,13 +30,13 @@ const WhatsOnGridList = () => {
         <li className='grid-item' key={item.id}>
             <div>
                 <picture>
-                    <img src={item.imgId.Event_1} alt={item.title}/>
+                    <img src={item.imgId} alt={item.title}/>
                 </picture>
             </div>
             <div className='content'>
                 <div>{item.venue}</div>
                 <h3 className='heading-h3'>{item.title}</h3>
-                <p className='text'>{item.description}</p>
+                <p className='text'>{`${item.description.substring(0, 150)}...`}</p>
                 <a className='btn btn-primary margin-top-s' href={item.link}>{item.btnLabel}</a>
             </div>
         </li>
@@ -50,13 +50,13 @@ const WhatsOnGridList = () => {
         <li className='grid-item' key={item.id}>
             <div>
                 <picture>
-                    <img src={item.imgId.Event_1} alt={item.title}/>
+                    <img src={item.imgId} alt={item.title}/>
                 </picture>
             </div>
             <div className='content'>
                 <div>{item.venue}</div>
                 <h3 className='heading-h3'>{item.title}</h3>
-                <p className='text'>{item.description}</p>
+                <p className='text'>{`${item.description.substring(0, 150)}...`}</p>
                 <a className='btn btn-primary margin-top-s' href={item.link}>{item.btnLabel}</a>
             </div>
         </li>
@@ -70,13 +70,13 @@ const WhatsOnGridList = () => {
         <li className='grid-item' key={item.id}>
             <div>
                 <picture>
-                    <img src={item.imgId.Event_1} alt={item.title}/>
+                    <img src={item.imgId} alt={item.title}/>
                 </picture>
             </div>
             <div className='content'>
                 <div>{item.venue}</div>
                 <h3 className='heading-h3'>{item.title}</h3>
-                <p className='text'>{item.description}</p>
+                <p className='text'>{`${item.description.substring(0, 150)}...`}</p>
                 <a className='btn btn-primary margin-top-s' href={item.link}>{item.btnLabel}</a>
             </div>
         </li>
@@ -95,6 +95,8 @@ const WhatsOnGridList = () => {
         }
     }
 
+    const uniqueVenues = Array.from(new Set(events.map(event => event.venue)));
+
     return (
         <div className='whats-on-grid-list-container'>
         <div className='container'>
@@ -105,9 +107,9 @@ const WhatsOnGridList = () => {
                             <label for="venue"></label>
                                 <select className='text' name="venue" id="venue" onChange={handleChange}>
                                     <option value="All">All</option>
-                                    <option value="Sportsbar">Sportsbar</option>
-                                    <option value="Inna Lounge">Inna Lounge</option>
-                                    <option value="Taylors Rooftop">Taylors Rooftop</option>
+                                    {uniqueVenues.map(filter => 
+                                        <option key={filter.id} value={filter}>{filter}</option>
+                                    )}
                                 </select>
                         </div>
                         <ul>

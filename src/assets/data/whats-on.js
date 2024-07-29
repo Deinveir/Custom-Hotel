@@ -1,64 +1,62 @@
-import Event_1 from "../images/RH_Whats-On_Live-Entertainment.webp"
-
 export const events = [
     {
         id: 0,
-        imgId: {Event_1},
-        title: "Event 1",
-        venue: "Sportsbar",
-        date: "July 25, 2024",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        imgId: "src/assets/images/RH_Events_Taylors-Friday-Night.webp",
+        title: "Taylors Friday Night Mix Tape",
+        venue: "Taylors Rooftop",
+        date: "February 22, 2024",
+        description: "Taylor’s rooftop reignites the night with late night good times! Every Friday night we bring you the best in Pop, Disco, and Classic jams set up on the picturesque Taylor’s rooftop! Raise your glass and click play to the weekend!",
         link: "#",
-        btnLabel: "View Functions"
+        btnLabel: "Learn More"
     },
     {
         id: 1,
-        imgId: {Event_1},
-        title: "Event 2",
-        venue: "Inna Lounge",
-        date: "July 25, 2024",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        imgId: "src/assets/images/RH_Events_Halfed-Price-Pizza.webp",
+        title: "Half-Priced Pizza",
+        venue: "Taylors Rooftop",
+        date: "March 07, 2024",
+        description: "Choose from a select range of pizzas and enjoy them for half price. Whether it’s an easy lunch deal or quick dinner you’re after – we’ve got you covered.",
         link: "#",
-        btnLabel: "View Functions"
+        btnLabel: "Learn More"
     },
     {
         id: 2,
-        imgId: {Event_1},
-        title: "Event 3",
-        venue: "Taylors Rooftop",
+        imgId: "src/assets/images/RH_Whats-On_Live-Entertainment.webp",
+        title: "Live Entertainment",
+        venue: "Sportsbar",
         date: "July 25, 2024",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "Stay tuned for live entertainment that will elevate your evening to new heights. Our lineup of live performances will keep the energy high and the vibes right. It’s the perfect way to enjoy incredible deals while being entertained by top-notch talent.",
         link: "#",
-        btnLabel: "View Functions"
+        btnLabel: "Learn More"
     },
     {
         id: 3,
-        imgId: {Event_1},
-        title: "Event 4",
+        imgId: "src/assets/images/RH_Events_Republic-x-tokyo-lamington.webp",
+        title: "Republic X Tokyo Lamington",
         venue: "Sportsbar",
-        date: "July 25, 2024",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        date: "July 17, 2024",
+        description: "To celebrate National Lamington Day, we teamed up with the cult-favourite Tokyo Lamington to bake and shake a limited edition Lamington Cocktail – the first Australia has seen! ",
         link: "#",
-        btnLabel: "View Functions"
+        btnLabel: "Learn More"
     },
     {
         id: 4,
-        imgId: {Event_1},
-        title: "Event 5",
-        venue: "Inna Lounge",
-        date: "July 25, 2024",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "#",
-        btnLabel: "View Functions"
-    },
-    {
-        id: 5,
-        imgId: {Event_1},
-        title: "Event 6",
+        imgId: "src/assets/images/RH_Events_Taylors-Sundays.webp",
+        title: "Taylors Saturdays!",
         venue: "Taylors Rooftop",
         date: "July 25, 2024",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "#",
-        btnLabel: "View Functions"
+        btnLabel: "Learn More"
+    },
+    {
+        id: 5,
+        imgId: "src/assets/images/RH_Events_Happy-Hour.webp",
+        title: "Happy Hour",
+        venue: "Taylors Rooftop",
+        date: "March 09, 2024",
+        description: "Enjoy $16 margaritas and select house beer, wine, sparkling, and house spirits for just $6. You’ll be celebrating your smart choices in no time. It’s the perfect reason to clock out, gather your friends, and toast to the finer things in life—like great company and unbeatable deals!",
+        link: "#",
+        btnLabel: "Learn More"
     }
 ]
