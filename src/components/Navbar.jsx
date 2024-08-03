@@ -11,10 +11,17 @@ const Navbar = () => {
   const root = document.querySelector('#root');
   const navContainer = useRef(null);
 
-  root.addEventListener("scroll", () => {
-    console.log(root.scrollTop);
-    {root.scrollTop > 300 ? setSticky(true) : setSticky(false)}
-  })
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(root.scrollTop > 300);
+    };
+  
+    root.addEventListener("scroll", handleScroll);
+
+    return () => {
+      root.removeEventListener("scroll", handleScroll);
+    };
+  }, [root]);
 
   return (
     <>
