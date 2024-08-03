@@ -3,10 +3,6 @@
     position: relative;
 }
 
-.navbar-container.sticky{
-    position: sticky;
-}
-
 .navbar-container .sub-container{
     width: 1400px;
     margin-left: auto;
@@ -24,6 +20,10 @@
     min-height: 100px;
 }
 
+.navbar-container .logo{
+    width: 150px;
+}
+
 .navbar-container nav ul{
     gap: 32px;
     list-style: none;
@@ -33,6 +33,7 @@
     font-size: 16px;
     text-decoration: none;
     list-style: none;
+    font-weight: 500;
 }
 
 .navbar-container .navbar-right{
@@ -76,4 +77,28 @@
 
 .navbar-container .dropbar-show ul a:hover{
     background: #005c4a7c;
+}
+
+.navbar-container.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform: translateY(-200%);
+    z-index: 5;
+}
+
+.navbar-container.sticky-top *{
+    color: #005C4A;
+}
+
+.navbar-container.sticky-top{
+    /* animation: slideTop 1s ease-in-out; */
+    transition: all 1s ease-in-out;
+    transform: translateY(0);
+}
+
+.navbar-container.sticky-gone{
+    animation: slideBottom .5s ease-in-out;
 }

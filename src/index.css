@@ -9,6 +9,14 @@
   z-index: 0;
 }
 
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .hgreen{
   color: #005C4A;
 }
@@ -166,7 +174,7 @@ a{
 .btn-primary{
   background: #005C4A;
   border: none;
-  color: #FFF5E8;
+  color: #FFF5E8 !important;
 }
 
 .btn-primary:hover{
@@ -237,4 +245,23 @@ a{
 .padding-m{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+/* Animations */
+@keyframes slideTop {
+  0%{
+    transform: translateY(-200%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideBottom {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-200%);
+  }
 }
