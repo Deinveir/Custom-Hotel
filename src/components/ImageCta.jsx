@@ -6,10 +6,14 @@ const ImageCta = ( {
     heading,
     description,
     buttonLabel,
-    buttonLink
+    buttonLink,
+    backgroundImage,
 } ) => {
+  const bgImage = backgroundImage ? {background: `radial-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url(${backgroundImage}) center/cover`} : {};
   return (
-    <div className='cta-container light'>
+    <div className='cta-container light' style={
+      bgImage
+    }>
       <div className='row container x-large'>
         <h2 className='heading-h2'>{heading}</h2>
         <p className='text'>{description}</p>

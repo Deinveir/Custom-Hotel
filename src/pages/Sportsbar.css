@@ -1,0 +1,4 @@
+.sportsbar-container .three-grid-container .content,
+.sportsbar-container .item-overlay{
+    display: none;
+}

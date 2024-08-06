@@ -1,0 +1,4 @@
+.inna-container .three-grid-container .content,
+.inna-container .item-overlay{
+    display: none;
+}

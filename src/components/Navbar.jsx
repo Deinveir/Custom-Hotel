@@ -6,6 +6,7 @@ import Logo_2 from "../assets/images/RH_Logo_Green.png"
 
 const Navbar = () => {
   const [dropbar, setDropBar] = useState(false);
+  const [dropbarSticky, setDropBarSticky] = useState(false);
   const [sticky, setSticky] = useState(false);
   const [animation, setAnimation] = useState(false);
   const root = document.querySelector('#root');
@@ -13,6 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      
       setSticky(root.scrollTop > 300);
     };
   
@@ -110,7 +112,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a className='text-link-inverse' href="/venues" onMouseEnter={()=>{
-                    setDropBar(true);
+                    setDropBarSticky(true);
                   }}>
                   Venues
                   </a>
@@ -136,8 +138,8 @@ const Navbar = () => {
                     </button>
                 </div>
             </ul>
-            <div className={dropbar ? "dropbar-show" : "dropbar"} onMouseLeave={()=>{
-                    setDropBar(false);
+            <div className={dropbarSticky ? "dropbar-show" : "dropbar"} onMouseLeave={()=>{
+                    setDropBarSticky(false);
                   }}>
               <ul>
                 <li><a href="/venues/sportsbar">Sportsbar</a></li>

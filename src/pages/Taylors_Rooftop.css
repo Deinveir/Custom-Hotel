@@ -1,0 +1,4 @@
+.taylors-container .three-grid-container .content,
+.taylors-container .item-overlay{
+    display: none;
+}

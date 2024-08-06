@@ -1,6 +1,6 @@
 .cta-container{
     height: 80vh;
-    background: radial-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/images/RH_Bottom-Book-Now.jpg") center/cover;
+    background: radial-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/images/RH_Bottom-Book-Now.jpg") center/cover; 
 }
 
 .cta-container .row{
