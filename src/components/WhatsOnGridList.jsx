@@ -3,12 +3,14 @@ import "./WhatsOnGridList.css"
 
 import {events} from "../assets/data/whats-on.js"
 
+console.log(events)
+
 const WhatsOnGridList = () => {
     const eventsList = events.map((item, index) => 
         <li className='grid-item' key={item.id}>
             <div>
                 <picture>
-                    <img src={item.imgId} alt={item.title}/>
+                    <img src={`${item.imgId}`} alt={item.title} />
                 </picture>
             </div>
             <div className='content'>
@@ -30,7 +32,7 @@ const WhatsOnGridList = () => {
         <li className='grid-item' key={item.id}>
             <div>
                 <picture>
-                    <img src={item.imgId} alt={item.title}/>
+                <img src={`${item.imgId}`} alt={item.title} />
                 </picture>
             </div>
             <div className='content'>

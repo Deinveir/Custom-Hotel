@@ -1,7 +1,14 @@
-export const events = [
+import Image_1 from "../images/RH_Events_Taylors-Friday-Night.webp" 
+import Image_2 from "../images/RH_Events_Halfed-Price-Pizza.webp" 
+import Image_3 from "../images/RH_Whats-On_Live-Entertainment.webp"
+import Image_4 from "../images/RH_Events_Republic-x-tokyo-lamington.webp"
+import Image_5 from "../images/RH_Events_Taylors-Sundays.webp"
+import Image_6 from "../images/RH_Events_Happy-Hour.webp"
+
+export var events = [
     {
         id: 0,
-        imgId: "/assets/images/RH_Events_Taylors-Friday-Night.webp",
+        imgId: Image_1,
         title: "Taylors Friday Night Mix Tape",
         venue: "Taylors Rooftop",
         date: "February 22, 2024",
@@ -11,7 +18,7 @@ export const events = [
     },
     {
         id: 1,
-        imgId: "/assets/images/RH_Events_Halfed-Price-Pizza.webp",
+        imgId: Image_2,
         title: "Half-Priced Pizza",
         venue: "Taylors Rooftop",
         date: "March 07, 2024",
@@ -21,7 +28,7 @@ export const events = [
     },
     {
         id: 2,
-        imgId: "/assets/images/RH_Whats-On_Live-Entertainment.webp",
+        imgId: Image_3,
         title: "Live Entertainment",
         venue: "Sportsbar",
         date: "July 25, 2024",
@@ -31,7 +38,7 @@ export const events = [
     },
     {
         id: 3,
-        imgId: "/assets/images/RH_Events_Republic-x-tokyo-lamington.webp",
+        imgId: Image_4,
         title: "Republic X Tokyo Lamington",
         venue: "Sportsbar",
         date: "July 17, 2024",
@@ -41,7 +48,7 @@ export const events = [
     },
     {
         id: 4,
-        imgId: "/assets/images/RH_Events_Taylors-Sundays.webp",
+        imgId: Image_5,
         title: "Taylors Saturdays!",
         venue: "Taylors Rooftop",
         date: "July 25, 2024",
@@ -51,7 +58,7 @@ export const events = [
     },
     {
         id: 5,
-        imgId: "/assets/images/RH_Events_Happy-Hour.webp",
+        imgId: Image_6,
         title: "Happy Hour",
         venue: "Taylors Rooftop",
         date: "March 09, 2024",
