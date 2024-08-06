@@ -1,7 +1,7 @@
 export const events = [
     {
         id: 0,
-        imgId: "src/assets/images/RH_Events_Taylors-Friday-Night.webp",
+        imgId: "/assets/images/RH_Events_Taylors-Friday-Night.webp",
         title: "Taylors Friday Night Mix Tape",
         venue: "Taylors Rooftop",
         date: "February 22, 2024",
@@ -11,7 +11,7 @@ export const events = [
     },
     {
         id: 1,
-        imgId: "src/assets/images/RH_Events_Halfed-Price-Pizza.webp",
+        imgId: "/assets/images/RH_Events_Halfed-Price-Pizza.webp",
         title: "Half-Priced Pizza",
         venue: "Taylors Rooftop",
         date: "March 07, 2024",
@@ -21,7 +21,7 @@ export const events = [
     },
     {
         id: 2,
-        imgId: "src/assets/images/RH_Whats-On_Live-Entertainment.webp",
+        imgId: "/assets/images/RH_Whats-On_Live-Entertainment.webp",
         title: "Live Entertainment",
         venue: "Sportsbar",
         date: "July 25, 2024",
@@ -31,7 +31,7 @@ export const events = [
     },
     {
         id: 3,
-        imgId: "src/assets/images/RH_Events_Republic-x-tokyo-lamington.webp",
+        imgId: "/assets/images/RH_Events_Republic-x-tokyo-lamington.webp",
         title: "Republic X Tokyo Lamington",
         venue: "Sportsbar",
         date: "July 17, 2024",
@@ -41,7 +41,7 @@ export const events = [
     },
     {
         id: 4,
-        imgId: "src/assets/images/RH_Events_Taylors-Sundays.webp",
+        imgId: "/assets/images/RH_Events_Taylors-Sundays.webp",
         title: "Taylors Saturdays!",
         venue: "Taylors Rooftop",
         date: "July 25, 2024",
@@ -51,7 +51,7 @@ export const events = [
     },
     {
         id: 5,
-        imgId: "src/assets/images/RH_Events_Happy-Hour.webp",
+        imgId: "/assets/images/RH_Events_Happy-Hour.webp",
         title: "Happy Hour",
         venue: "Taylors Rooftop",
         date: "March 09, 2024",
